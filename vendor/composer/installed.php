@@ -1,22 +1,22 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '9c8a9c193a1015bbd5a75dfa79e34fe163d78a07',
         'name' => 'nelsonband/ecommerce_hcode',
         'dev' => true,
     ),
     'versions' => array(
         'nelsonband/ecommerce_hcode' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '9c8a9c193a1015bbd5a75dfa79e34fe163d78a07',
             'dev_requirement' => false,
         ),
         'phpmailer/phpmailer' => array(
