@@ -25,6 +25,7 @@ class Sql {
 	private function setParams($statement, $parameters = array())
 	{
 
+
 		foreach ($parameters as $key => $value) {
 			
 			$this->bindParam($statement, $key, $value);
@@ -54,13 +55,14 @@ class Sql {
 	public function select($rawQuery, $params = array()):array
 	{
 
-		$stmt = $this->conn->prepare($rawQuery);
+        $stmt = $this->conn->prepare($rawQuery);
 
-		$this->setParams($stmt, $params);
+        $this->setParams($stmt, $params);
 
-		$stmt->execute();
 
-		return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+        $stmt->execute();
+
+        return $stmt->fetchAll(\PDO::FETCH_ASSOC);
 
 	}
 

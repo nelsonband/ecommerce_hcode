@@ -413,6 +413,7 @@ class Slim
     {
         $args = func_get_args();
 
+
         return $this->mapRoute($args)->via(\Slim\Http\Request::METHOD_GET, \Slim\Http\Request::METHOD_HEAD);
     }
 
@@ -1169,6 +1170,7 @@ class Slim
             } else {
                 header(sprintf('HTTP/%s %s', $this->config('http.version'), \Slim\Http\Response::getMessageForCode($status)));
             }
+
 
             //Send headers
             foreach ($header as $name => $value) {
